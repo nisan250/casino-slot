@@ -1,0 +1,88 @@
+.carousel-wrapper {
+  position: relative;
+  width: 56vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  button.left {
+    left: -4vw;
+    line-height: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .left-arrow {
+    background-image: url(../../assets/lobby/arrow-left.png);
+    width: 3vw;
+    height: 5vh;
+    display: block;
+    background-repeat: no-repeat;
+  }
+
+  button.right {
+    line-height: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: -4vw;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    .right-arrow {
+      background-image: url(../../assets/lobby/arrow-right.png);
+      width: 3vw;
+      height: 5vh;
+      display: block;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .carousel-content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    transform: translate3d(0px, 0, 0);
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: auto;
+      padding: 2vw 0;
+      position: relative;
+      transition: all 0.25s ease 0s;
+    }
+
+    li {
+      margin: 0 1vw;
+    }
+  }
+
+  .carousel-navigation {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    span {
+      background-image: url(../../assets/lobby/bullet-off.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 2vw;
+      height: 2vh;
+      display: block;
+
+      &.active {
+        background-image: url(../../assets/lobby/bullet-on.png);
+      }
+    }
+  }
+}

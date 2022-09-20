@@ -1,0 +1,30 @@
+.reel-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.spin-reel {
+  transform: translate3d(0vw, -647vh, 0px);
+  //   background: red;
+}
+
+.slot-reel {
+  width: 8.5vw;
+  height: 38.8vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  // animation-name: change;
+  // animation-duration: 10s;
+  // animation-iteration-count: infinite;
+
+  img {
+    width: 5.5vw;
+    margin: 1.9vh auto;
+    // margin: 0 auto 4vh;
+  }
+}

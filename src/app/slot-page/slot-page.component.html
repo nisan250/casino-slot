@@ -1,0 +1,10 @@
+<div class="slot-page-wrapper">
+    <button class="back-button" (click)="back()">Back</button>
+    <div class="slot-empty" *ngIf="isSlotEmpty">
+        Slot Is Empty
+    </div>
+    
+    <div class="slot-page" *ngIf="!isSlotEmpty">
+        <app-slot-machine></app-slot-machine>
+    </div>
+</div>

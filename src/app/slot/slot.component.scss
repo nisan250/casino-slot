@@ -1,0 +1,44 @@
+.slot {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 12vw;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .jackpot {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &.slot-locked {
+    &:after {
+      content: "";
+      background-image: url(../../assets/lobby/lock.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: not-allowed;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    img {
+      filter: grayscale(100%);
+    }
+  }
+}

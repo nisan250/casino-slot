@@ -1,0 +1,235 @@
+// @keyframes change {
+//   0%,
+//   12.66%,
+//   100% {
+//     transform: translate3d(0, 0, 0);
+//   }
+//   16.66%,
+//   29.32% {
+//     transform: translate3d(0, -25%, 0);
+//   }
+//   33.32%,
+//   45.98% {
+//     transform: translate3d(0, -50%, 0);
+//   }
+//   49.98%,
+//   62.64% {
+//     transform: translate3d(0, -75%, 0);
+//   }
+//   66.64%,
+//   79.3% {
+//     transform: translate3d(0, -100%, 0);
+//   }
+//   83.3%,
+//   95.96% {
+//     transform: translate3d(0, 100%, 0);
+//   }
+// }
+
+.slot-machine-body {
+  background-image: url(../../assets/slot-1128/mask_game.png);
+  width: 100vw;
+  height: 92vh;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+}
+
+.machine-top-area {
+  width: 45vw;
+  margin: 6.5vh 0 0 29vw;
+  height: 20.8vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.machine-middle-area {
+  width: 42.7vw;
+  margin: 2.6vh 0 0 30.3vw;
+  height: 38.7vh;
+  display: flex;
+}
+
+.logo {
+  background-image: url(../../assets/slot-1128/logo.png);
+  width: 23vw;
+  height: 27.2vh;
+  background-repeat: round;
+  position: relative;
+  top: -5.5vh;
+  left: -2vw;
+}
+
+.top-score {
+  font-family: "digitalDream";
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+
+  .top-score-1 {
+    color: #ff1111;
+    height: 4vh;
+    line-height: 4.2vh;
+    font-size: 3vmin;
+    margin-bottom: 0.7vh;
+  }
+
+  .top-score-2 {
+    color: #ff3609;
+    height: 4vh;
+    line-height: 4.2vh;
+    font-size: 3vmin;
+    margin-bottom: 0.6vh;
+  }
+
+  .top-score-3 {
+    color: #ff4b1c;
+    height: 3.4vh;
+    line-height: 3.4vh;
+    font-size: 2.9vmin;
+    margin-bottom: 0.6vh;
+  }
+
+  .top-score-4 {
+    color: #fcaf48;
+    height: 3.4vh;
+    line-height: 3.4vh;
+    font-size: 2.9vmin;
+    margin-bottom: 0.6vh;
+  }
+
+  .top-score-5 {
+    color: #c9d214;
+    height: 3.4vh;
+    line-height: 3.4vh;
+    font-size: 2.9vmin;
+  }
+
+  span {
+    margin: 0 0 0.2vh 0;
+    box-sizing: border-box;
+  }
+}
+
+.machine-bottom-area {
+  width: 50vw;
+  margin: 1.2vh 0 0 26vw;
+  height: 11vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .bottom-left-area {
+    width: 36vw;
+
+    .bottom-left-top {
+      display: flex;
+      height: 4vh;
+
+      .win-result {
+        font-family: "digitalDream";
+        color: #ff1111;
+        width: 20vw;
+        text-align: center;
+        margin: 1.3vh 0 0 1vw;
+        font-size: 1.1vw;
+      }
+
+      .total-bet {
+        font-family: "digitalDream";
+        color: #ff1111;
+        width: 11vw;
+        margin-left: 4vw;
+        text-align: center;
+        margin-top: 2vh;
+        font-size: 1.5vh;
+      }
+    }
+
+    .bottom-left-bottom {
+      height: 7vh;
+      display: flex;
+
+      .bet-plus {
+        background-image: url(../../assets/slot-1128/but_bet_plus.png);
+        width: 6vw;
+        height: 8vh;
+        background-repeat: round;
+        position: relative;
+        left: -0.4vw;
+      }
+
+      .bet-amount {
+        font-family: "digitalDream";
+        color: #fff;
+        width: 5vw;
+        text-align: center;
+        margin-top: 1vh;
+      }
+
+      .bet-minus {
+        background-image: url(../../assets/slot-1128/but_bet_minus.png);
+        width: 6vw;
+        height: 8vh;
+        background-repeat: round;
+      }
+
+      .pay-table {
+        background-image: url(../../assets/slot-1128/but_info_bg.png);
+        width: 8.3vw;
+        height: 8.4vh;
+        background-repeat: round;
+        position: relative;
+        top: -0.7vh;
+      }
+
+      .max-bet {
+        background-image: url(../../assets/slot-1128/but_maxbet_bg.png);
+        width: 8.4vw;
+        height: 8.8vh;
+        background-repeat: round;
+        position: relative;
+        top: -0.7vh;
+        justify-content: right;
+        left: 2.8vw;
+      }
+    }
+  }
+
+  .bottom-right-area {
+    background-image: url(../../assets/slot-1128/but_spin_bg.png);
+    width: 11.7vw;
+    height: 8.9vh;
+    background-repeat: round;
+    align-self: center;
+    cursor: pointer;
+  }
+}
+
+// .reel-wrapper {
+//   display: flex;
+//   position: relative;
+//   align-items: center;
+//   overflow: hidden;
+//   transform: translate3d(0, 0, 0);
+// }
+
+// .slot-reel {
+//   width: 8.5vw;
+//   height: 38.8vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   position: relative;
+//   transition: all 0.25s ease 0s;
+
+//   animation-name: change;
+//   animation-duration: 10s;
+//   animation-iteration-count: infinite;
+
+//   img {
+//     width: 5.5vw;
+//     margin: 2vh auto;
+//     // margin: 0 auto 4vh;
+//   }
+// }

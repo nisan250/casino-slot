@@ -1,0 +1,20 @@
+<div class="carousel-wrapper">
+    <button class="left" (click)="showPreviousSlots()">
+        <i class="left-arrow" *ngIf="showLeftArrow"></i>
+    </button>
+    <div class="carousel-content">
+        <ul [ngStyle]="{'transform':'translate3d(' + positionX + 'vw' + ', 0px, 0px)'}">
+            <li *ngFor="let slot of slots">
+                <app-slot [slot]="slot"></app-slot>
+            </li>
+        </ul>     
+    </div>
+    <button class="right" (click)="showNextSlots()">
+        <i class="right-arrow" *ngIf="this.showRightArrow"></i>
+    </button>
+
+    <div class="carousel-navigation">
+        <span [ngClass]="{'active': num === currentDisplayedSet}" *ngFor='let num of displayedSetTotalArr' (click)="setCarousel(num)">
+        </span>
+    </div>
+</div>

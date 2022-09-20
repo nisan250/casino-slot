@@ -1,0 +1,31 @@
+.bg-music-btn {
+  width: 46px;
+  height: 46px;
+  background: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0px;
+  display: flex;
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  i {
+    display: inline-block;
+    margin: auto;
+  }
+
+  .unmute-icon {
+    background-image: url(../../assets/lobby/sound-on-icon.png);
+    width: 41px;
+    height: 39px;
+  }
+
+  .mute-icon {
+    background-image: url(../../assets/lobby/mute-icon.png);
+    width: 30px;
+    height: 38px;
+  }
+}

@@ -1,0 +1,4 @@
+  <button class="bg-music-btn" (click)="toggleMusic()">
+    <i class="unmute-icon" *ngIf="this.audioObject.muted"></i>
+    <i class="mute-icon" *ngIf="!this.audioObject.muted"></i>
+  </button>

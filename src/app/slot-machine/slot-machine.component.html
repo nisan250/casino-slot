@@ -1,0 +1,35 @@
+<div class="slot-machine-body">
+    <div class="machine-top-area">
+        <div class="logo"></div>
+        <div class="top-score">
+            <span class="top-score-1">500.072.001.387</span>
+            <span class="top-score-2">125.100.801.942</span>
+            <span class="top-score-3">35.158.403.052</span>
+            <span class="top-score-4">15.244.804.717</span>
+            <span class="top-score-5">4.731.427.500</span>
+        </div>
+    </div>
+    <div class="machine-middle-area">
+        <app-reel [isSpinning]="isSpinning" (spinFinishedEvent)="onSpinFinished()" [symbols]="[symbols[1], symbols[2], symbols[3], symbols[4], symbols[5]]"></app-reel>
+        <app-reel [isSpinning]="isSpinning" (spinFinishedEvent)="onSpinFinished()" [symbols]="[symbols[6], symbols[7], symbols[8], symbols[9], symbols[10]]"></app-reel>
+        <app-reel [isSpinning]="isSpinning" (spinFinishedEvent)="onSpinFinished()" [symbols]="[symbols[11], symbols[12], symbols[3], symbols[7], symbols[9]]"></app-reel>
+        <app-reel [isSpinning]="isSpinning" (spinFinishedEvent)="onSpinFinished()" [symbols]="[symbols[4], symbols[6], symbols[12], symbols[8], symbols[7]]"></app-reel>
+        <app-reel [isSpinning]="isSpinning" (spinFinishedEvent)="onSpinFinished()" [symbols]="[symbols[11], symbols[4], symbols[5], symbols[8], symbols[9]]"></app-reel>
+    </div>
+    <div class="machine-bottom-area">
+        <div class="bottom-left-area">
+            <div class="bottom-left-top">
+                <span class="total-bet">300.000</span>
+                <span class="win-result">3000.000.000</span>
+            </div>
+            <div class="bottom-left-bottom">
+                <div class="bet-minus"></div>
+                <div class="bet-amount">20M</div>
+                <div class="bet-plus"></div>
+                <div class="pay-table"></div>
+                <div class="max-bet"></div>
+            </div>
+        </div>
+        <div class="bottom-right-area" (click)="spinReels()"></div>
+    </div>
+</div>

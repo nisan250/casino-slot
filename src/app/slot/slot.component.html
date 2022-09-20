@@ -1,0 +1,4 @@
+<a class="slot" [ngClass]="{'slot-locked' : slot.isLocked}" (click)="gotoSlots(slot)">
+    <app-jackpot-counter *ngIf="slot.jackpot" class="jackpot" [jackpotAmount]="slot.jackpot"></app-jackpot-counter>
+    <img [src]="slot.image" [alt]="slot.name" />
+</a>
